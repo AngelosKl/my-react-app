@@ -1,9 +1,8 @@
-/* Βασικό background και styling */
 body {
     margin: 0;
     padding: 0;
-    background-color: #3A006F; /* Σκούρο μωβ background */
-    color: #FFF; /* Άσπρο χρώμα για τα γράμματα */
+    background-color: #3A006F; 
+    color: #FFF; 
     font-family: 'Roboto', sans-serif;
     
   }
@@ -12,53 +11,54 @@ body {
     margin: 0;
   }
   
-  /* Το πάνω μέρος */
   .top {
     display: flex;
     align-items: center;
-    height: 20vh; /* Πιάνει 20% του ύψους */
+    height: 20vh; 
     padding: 10px;
-    box-sizing: border-box; /* Συμπεριλαμβάνει padding και border στο πλάτος */
-    width: calc(60% - 20px); /* Το πλάτος είναι το ίδιο με το mid, μείον padding */
-    margin: 0 auto; /* Κεντράρει το .top */
+    box-sizing: border-box; 
+    width: 100%;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .top p {
-    font-size: 0.8rem; /* Μεγαλύτερο μέγεθος για το welcome */
-    margin: 0; /* Αφαιρεί περιθώρια */
-    position: absolute; /* Τοποθέτηση στο πάνω αριστερό μέρος */
-    top: 10px; /* Απόσταση από το πάνω μέρος */
-    left: 10px; /* Απόσταση από το αριστερό μέρος */
+    font-size: 0.8rem; 
+    margin: 0; 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
   }
   
   .topButtons {
-    background-color: #8E44AD; /* Απαλό μωβ χρώμα */
+    background-color: #8E44AD; 
     color: white;
-    border: 2px solid #7D3C98; /* Σκούρο περίγραμμα */
+    border: 2px solid #7D3C98; 
     border-radius: 5px;
     padding: 10px 15px;
-    margin: 0 5px; /* Κενό γύρω από κάθε κουμπί */
+    margin: 0 5px; 
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
-    box-sizing: border-box; /* Συμπεριλαμβάνει padding και border στο πλάτος */
-    width: calc((100% - 20px) / 5); /* Το πλάτος ταιριάζει με το mid, μοιρασμένο σε 5 κουμπιά */
+    box-sizing: border-box; 
+    width: auto;
   }
-  /* Εφέ hover για τα κουμπιά της κορυφής */
+  
 .topButtons:hover {
-    background-color: #A569BD; /* Ελαφρώς πιο ανοιχτό μωβ χρώμα όταν το κουμπί είναι ενεργό */
-    border-color: #9B59B6; /* Ελαφρώς πιο ανοιχτό χρώμα για το περίγραμμα */
+    background-color: #A569BD; 
+    border-color: #9B59B6; 
   }
   
   
-  /* Το κουμπί μουσικής */
+ 
   .musicB {
     background: none;
     border: none;
     cursor: pointer;
-    position: absolute; /* Τοποθέτηση στο πάνω δεξί μέρος */
-    top: 10px; /* Απόσταση από το πάνω μέρος */
-    right: 10px; /* Απόσταση από το δεξί μέρος */
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
   }
   
   .musicB img {
@@ -70,16 +70,16 @@ body {
     opacity: 0.8;
   }
   
-  /* Το μεσαίο κομμάτι */
+ 
   .mid {
     width: 60%;
-    margin: 10px auto; /* 10px απόσταση από το top και το bot */
+    margin: 10px auto; 
     padding: 20px;
     background-color: #FFF;
     color: #333;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    min-height: 60vh; /* 60% του ύψους της οθόνης */
+    min-height: 60vh; 
   }
   
 
@@ -95,18 +95,18 @@ body {
     line-height: 1.6;
   }
     
-  /* Κάτω μέρος */
+  
   .bot {
     display: flex;
-    justify-content: space-between; /* Κρατά τις δύο πλευρές αριστερά και δεξιά */
+    justify-content: space-between; 
     align-items: center;
     height: 20vh;
     padding: 0 20px;
   }
   
-  /* Bot κουμπιά */
+  
   .botButtons {
-    background-color: #2980B9; /* Μπλε χρώμα κουμπιών */
+    background-color: #2980B9; 
     color: white;
     border: 2px solid #2471A3;
     border-radius: 5px;
@@ -118,21 +118,24 @@ body {
   }
   
   .botButtons:hover {
-    background-color: #3498DB; /* Hover εφέ */
+    background-color: #3498DB; 
   }
   
-  /* Διάταξη για το 'About Me' */
+  
 #aboutMeContent {
-    display: flex;               /* Χρησιμοποιεί Flexbox για την οριζόντια διάταξη */
-    align-items: flex-start;      /* Κρατάει τα στοιχεία στην κορυφή */
+    display: flex;
+    flex-wrap: wrap;              
+    align-items: flex-start;
+    justify-content: center;      
   }
   
   #aboutMeContent img {
-    margin-right: 20px;          /* Κενό δεξιά από την εικόνα */
+    margin-right: 20px;          
   }
   
   #aboutmeInfo {
-    flex: 1;                     /* Παίρνει όσο χώρο χρειάζεται */
-    text-align: left;             /* Το κείμενο παραμένει αριστερά */
+    flex: 1;                     
+    text-align: left;  
+    margin-top: 24px;        
   }
   
