@@ -174,10 +174,10 @@ function MyPage() {
   <div className="right-buttons">
     <p id="downloadP">Download in pdf my:</p>
     <div>
-      <a href="/assets/mYcv.pdf" download="mYcv.pdf">
+      <a href="/assets/Resume Angelos Klimantiris.pdf" download="Resume Angelos Klimantiris.pdf">
         <button className='botButtons' id='resumeButton'>Resume</button>
       </a>
-      <a href="/assets/coverletter.pdf" download="coverletter.pdf">
+      <a href="/assets/Cover Letter Angelos Klimantiris.pdf" download="Cover Letter Angelos Klimantiris.pdf">
         <button className='botButtons' id='coverletterButton'>Cover Letter</button>
       </a>
     </div>
