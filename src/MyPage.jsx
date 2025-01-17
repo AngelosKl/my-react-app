@@ -49,7 +49,6 @@ function MyPage() {
     }
   }
 
-  
   return (
     <>
       <div className='top' id="top">
@@ -61,7 +60,6 @@ function MyPage() {
         <button className='topButtons' id='skillsButton' onClick={skillsF}>Skills</button>
         <button className='topButtons' id='otherButton' onClick={otherF}>Other</button>
 
-        
         <button className='musicB' id='musicB' onClick={toggleMusic}>
           <img 
             src={musicPlaying ? '/assets/musicOn.PNG' : '/assets/musicOff.PNG'}  
@@ -89,46 +87,46 @@ function MyPage() {
               Mobile: +306947750766<br />
               Email: aklimantiris98@gmail.com<br />
               <br></br>
-              I am a fresh graduate with a Master's Degree in Computer Science and Applications and looking to start my career!
+              I am a fresh graduate with a Master's Degree in Computer Science and Applications.
+              Apart from my academic accomplishments,
+              I actively contribute to two innovative startups and enjoy exploring new challenges in software development.
               Thank you for visiting my site! 
             </p>
           </div>
         </div>
-        
         )}
         {option === 'work' && (
           <div>
             <h2>Work Experience</h2>
-            <p>My work experience derives exclusivly from the University projects and my own work. The developing languages I have worked on are 
-              as fallows: C, Java, HTML, CSS and Javascript(react). I have also completed projects with SQL as my Database.
-              <br></br> <br></br> 
-              Through my Master's, I have coopared with a colleague to complete some difficult projects,
-               like an Adroid App and a Website, so I am a team player too! 
-               I spend my time creating apps, learning more about coding and enhancing my skills through CodeWars!
-                <br></br> <br></br> 
-                I believe that I'm strong with Java and Javascript because I have the most projects on them. Some of the projects I've built include:
-                the Android Quizz App, the E-commerce Website, a checklist app, a rock paper scissors app, a calculator, many smaller html-css-javascript website like a login-logout-register pages,
-                 a date-time-stopwatch, a rock paper scissors website, expenses tracker, dice etc. I've also completed 40+ Katas in codewars mid difficulty.
-                 <br></br> <br></br> 
-                 Althoug I specialize in Android Applications, I love building websites with JS or coding in Java for backend. I generally like coding, so I dont mind the position!
-                In my resume I describe in detail all the projects I've completed. 
-                So feel free to download it if you want to know more!
-              </p>
-            
-              
+            <p>
+              I am actively contributing to two startups:
+              <br /><br />
+              <strong>CoachMe</strong>: A health and wellness application designed to empower users in achieving their fitness and lifestyle goals.
+               I contribute to the app's development using Flutter and Dart, focusing on building visually appealing UIs based on Figma designs.
+               My work spans the entire development lifecycle, ensuring the app remains robust and aligned with its vision.
+              <br /><br />
+              <strong>Unnamed Startup</strong>: A mobile application that aims to create a unique experience between users and catering
+               establishments, leveraging new technologies to enhance interaction and
+               convenience for all audiences.
+               My contributions include developing cross-platform solutions with React Native and TypeScript, 
+               as well as designing scalable back-end systems using Node.js and MongoDB.
+              <br /><br />
+               These roles have honed my technical abilities and collaborative skills,
+               showcasing my adaptability and dedication to delivering impactful software solutions.
+            </p>
           </div>
         )}
         {option === 'edu' && (
           <div>
             <h2>Education</h2>
             <p>
-              As I've stated before, I am a fresh graduate of a Master's Degree in Computer Science and Applications. This is a Master's Program by
-              the University of West Attica, in Athens. I obtained the degree with a grade of 7.8/10. 
-              <br></br><br></br>
-              In my Bachelor's Degree I majored in Sports Management. The University of Peloponnese had this Bachelor's program in which 
-              I graduated with Honors by the EU standards with a grade of 7.4/10 after 4 years. 
-              <br></br><br></br>
-              Although my Bachelor's had some Computer Science courses, the Master's was a Career Change.
+              I hold a Master's Degree in Computer Science and Applications from the University of West Attica, Athens,
+               which I completed with a grade of 7.8/10. During my studies,
+                I worked on challenging projects such as an Android quiz app, an e-commerce website, and a university management system.
+              <br /><br />
+              Additionally, I have a Bachelor's Degree in Sports Management from the University of Peloponnese, Sparta, 
+              with a grade of 7.4/10. Although my Bachelor's included some computer science courses, 
+              the Master's marked a significant career shift.
             </p>
           </div>
         )}
@@ -136,21 +134,15 @@ function MyPage() {
           <div>
             <h2>Skills</h2>
             <p>
-              My Digital skills include:  Java, JavaScript(React), HTML, CSS, SQL. 
-              I've also used the following IDEs: VS Code, Intellij Idea, VMWare, Android Studio, XAMPP, Dev-C++.
-              I have also obtained some certifications by Microsoft Azure: 
-              Microsoft Azure: Introduction to Cloud Services/Cloud Services Types/Cloud Computing,
-              Microsoft Azure: Introduction to DevOps,
-              Microsoft Azure: Introduction to Git,
-              Microsoft Azure: Introduction to GitHub.
-              I also had a few hours of training by a senior developer on how to use GitHub and through the UNI projects with my colleague
-              I believe we had a similar working model to Agile. 
-              <br></br><br></br>
-              I also have a driver's lisence type B and my English skills are on B2 level, certified by the University Of Michigan.
-              Through many years of training and learning, I believe that my English skills reached on C1 level and finaly,
-              I have my military services fulfilled (they are mandatory in Greece).
-
-
+               My technical skills include: Dart, Java, JavaScript, Typescript, Node.js, Express.js, HTML, CSS, SQL, MongoDB 
+               and app development with Flutter and React Native.
+               I have experience with version control systems, particularly Git and GitHub,
+               which I use for collaborative development, managing clean codebases and ensuring efficient workflows.
+               I am proficient with IDEs like VSCode, IntelliJ IDEA and Android Studio.
+              <br /><br />
+               I have certifications from Microsoft Azure, including introductions to cloud services, DevOps, Git, and GitHub.
+               My experience in collaborative environments has prepared me to work effectively within Agile teams.
+               Additionally, I am fluent in English (C1 level) and hold a B-class driver's license.
             </p>
           </div>
         )}
@@ -158,8 +150,9 @@ function MyPage() {
           <div>
             <h2>Other Interests</h2>
             <p>
-            My hobbies include hanging out with friends, travelling, working out, playing chess and some video games,
-            Codewars, some front-end and some back-end coding etc.
+              Outside of work, I enjoy collaborating on innovative software projects, 
+              staying active with calisthenics, playing competitive chess,
+               and engaging in coding challenges on platforms like CodeWars.
             </p>
           </div>
         )}
